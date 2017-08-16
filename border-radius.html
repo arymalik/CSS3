@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Border Radius</title>
+	<style>
+	/*pengaturan border radius = atas kiri -  atas kanan - bawah kanan - bawah kiri*/
+		.kotak{
+			width: 250px;
+			height: 250px;
+			margin: 20px;
+			background-image: url(myprofile.png); /*untuk memanggil gambar sesuai kebutuhan aja contoh*/
+			background-size: cover;
+			background-repeat: no-repeat;	
+		}
+		.kotakA{
+			border: 8px solid salmon;
+			border-radius: 50px;
+		}
+		.kotakB{
+			border: 8px solid #ccc;
+			border-radius: 0 50% 0 50%;
+		}
+		.kotakC{
+			border: 8px solid red;
+			border-radius: 100%;
+		}
+		.kotakD{
+			height: 125px;
+			border: 8px solid pink;
+			border-radius: 0 0 250px 250px;
+		}
+		.kotakE{
+			border: 8px solid grey;
+			border-radius: 0 50% 50% 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="kotak kotakA">Kotak pinggir lancip</div>
+	<div class="kotak kotakB">kotak pinggir atur sendiri</div>
+	<div class="kotak kotakC">Lingkaran</div>
+	<div class="kotak kotakD">setengah lingkaran</div>
+	<div class="kotak kotakE">kapsul</div>
+</body>
+</html>
